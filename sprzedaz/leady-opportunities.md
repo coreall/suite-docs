@@ -196,21 +196,76 @@ Pole nie znajduje się natywnie w SuiteCRM. Aktualiazacja tego pola dokonuje si�
 
 ### okreslenieleada\_c \| nvarchar \(-1\) 
 
+> Wstępna zawartość Leada.
+
+{% hint style="info" %}
+Lista wybieralna
+
+* Cutter \[CUTTER WIELOWARSTWOWY\] 
+* OneLayerCutter \[CUTTER JEDNOWARSTWOWY\] 
+* Lagowarka \[LAGOWARKA\] 
+* Stol \[STÓŁ\] 
+* CAD \[PROGRAM CAD\] 
+* Prime\_5 \[PRIME .5\] 
+* ONE.5plus \[one .5 +\] 
+* ONE.5 \[one .5\] 
+* Optitex \[OPTITEX\] 
+* 3C50 \[3C50\] 
+* CC80 \[CC80\] 
+* AERO \[aero\] 
+* Caron \[Caron\] 
+* Ploter \[Ploter\] 
+* Digitizer \[DIGITIZER\] 
+* Inne \[INNE\] 
+* Dealer \[Dealer\] 
+* Training \[Szkolenie Optitex\]
+{% endhint %}
+
 ### przyczyna\_porazki\_c \| nvarchar \(255\) 
+
+Pole domyślnie ukryte. Do uzupełnienia, gdy etap leada jest równy Closed Lost \[LK Zakończony porażką\] 
 
 ### przyczyna\_wygranej\_c \| nvarchar \(-1\) 
 
+Pole domyślnie ukryte. Do uzupełnienia, gdy etap leada jest równy Closed Won \[LK Zakończony sukcesem\] 
+
 ### account\_id\_c \| varchar \(36\) 
+
+{% hint style="warning" %}
+Klucz obcy tabeli accounts.
+{% endhint %}
 
 ### typ\_maszyny\_c \| nvarchar \(255\) 
 
+> Nie używane
+
 ### nr\_lead\_c \| nvarchar \(255\) 
+
+> Numer Leada
 
 ### nr\_kolejny\_c \| int \(NULL\) 
 
+> Pierwszy segment z numeru leada
+
 ### cancel\_category\_c \| nvarchar \(100\) 
 
+{% hint style="info" %}
+Lista wybieralna
+
+* -czysto- \[-czysto-\] 
+* MachineIssue \[Brak urządzenia w ofercie\] 
+* FinanceIssue \[Brak środków finansowych\] 
+* CustomerIssue \[Klient rozmyślił się\] 
+* TechnicalIssue \[Nie tniemy takiego materiału\]
+{% endhint %}
+
 ### installation\_date\_c \| datetime \(NULL\)
+
+Data instalacji
+
+{% hint style="warning" %}
+Data instalacji jest aktualizowana na podstawie Oferty Estymowanej i Zamówienia.
+{% endhint %}
 
 ### 
 
