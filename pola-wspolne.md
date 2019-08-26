@@ -1,0 +1,54 @@
+# Pola wspólne
+
+### id \| varchar \(36\) 
+
+Unikalny identyfikator rekordu
+
+### name \| nvarchar \(50\) 
+
+{% hint style="info" %}
+Nazwa rekordu
+{% endhint %}
+
+Nazwa rekordu
+
+### date\_entered \| datetime 
+
+Data i czas wprowadzenia rekordu do bazy
+
+### date\_modified \| datetime 
+
+Data i czas ostatniej modyfikacji rekordu w bazie danych
+
+### modified\_user\_id \| varchar \(36\) 
+
+{% hint style="warning" %}
+Klucz obcy łączący z tabelą users 
+{% endhint %}
+
+### created\_by \| varchar \(36\) 
+
+{% hint style="warning" %}
+Klucz łączący z tabelą users
+{% endhint %}
+
+### description \| nvarchar \(-1\) 
+
+Pole przechowujące opis rekordu. Długi tekst
+
+### deleted \| bit  
+
+Pole przechowujące informację o tym czy dany rekord został oznaczony jako usunięty. 
+
+{% hint style="info" %}
+Aplikacje CoreA oraz SuiteCRM pokazuję jedynie rekordy gdzie **deleted  = 0**.
+{% endhint %}
+
+### assigned\_user\_id \| varchar \(36\) 
+
+{% hint style="warning" %}
+Klucz obcy łączący z tabelą users.
+{% endhint %}
+
+
+
