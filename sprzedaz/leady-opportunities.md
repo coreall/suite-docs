@@ -35,6 +35,30 @@ Klucz obcy tabeli campaigns
 
 ### lead\_source \| nvarchar \(100\) 
 
+{% hint style="info" %}
+Lista rozwijalna. 
+
+* -czysto- \[-czysto-\] 
+* Cold Call \[Cold Calling\] 
+* Dealer \[Dealer\] 
+* Self Generated \[Inicjatywa Własna Handlowca\] 
+* Employee \[Z polecenia pracownika Allcomp\] 
+* Partner \[Partner\] 
+* Public Relations \[Public Relations\] 
+* Web Site \[Formularz www\] 
+* Word of mouth 
+* \[Z polecenia klienta\] 
+* Email \[Z emaila\] 
+* Targi \[Targi\] 
+* Phone \[Telefon\] 
+* Press \[Prasa\] 
+* Databases \[Z baz\] 
+* Socialmedia \[Z social media\] 
+* Internet \[Z internetu\] 
+* Networking \[Networking\] 
+* Ankieta \[Badanie Satysfakcji Klienta\]
+{% endhint %}
+
 ### amount \| float \(NULL\) 
 
 ### amount\_usdollar \| float \(NULL\) 
