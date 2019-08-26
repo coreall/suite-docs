@@ -75,23 +75,75 @@ Na późniejszych etapach procesu sprzedaży wartość ta jest aktualizowana za 
 
 > Pole nieużywane
 
-### currency\_id \| varchar \(36\) 
-
-
-
 ### date\_closed \| datetime \(NULL\) 
+
+Data zakończenia danego etapu 
+
+> Pole widoczne w module Leady. Nie było nigdy jednak zwracane w żadnym z raportów.
 
 ### next\_step \| nvarchar \(100\) 
 
+> Pole nieużywane
+
 ### sales\_stage \| nvarchar \(255\) 
+
+Etap Leada
+
+{% hint style="info" %}
+Lista rozwijalna
+
+* LeadNKrp \[LN\] 
+* LNU \[LN - Anulowany\] 
+* LeadKW \[LK Wycena\] 
+* LeadKWof \[LK Oferta Wysłana\] 
+* Closed Won \[LK Zakończony sukcesem\] 
+* Closed Lost \[LK Zakończony porażką\] 
+* LeadUn \[LK Unieważniony\] 
+* Kontrakt\_Podpisany \[LK Zaliczka wpłynęła\]
+{% endhint %}
 
 ### probability \| float \(NULL\) 
 
+Prawdopodobieństwo. Za wyjątkiem gdy etap Leada jest równy LN prawdopodobieńtwo jest aktualizowane przez aplikację CoreA raz dziennie na podstawie zależności. 
+
+```text
+/*
+ * LN - 2%
+ * LK Wycena - 10%
+ * LK Oferta wysłana
+ *      Oferta 20% - Lead 20%
+ *      Oferta 40% - Lead 30%
+ *      Oferta 60% - Lead 50%
+ *      Oferta 80% - Lead 70%
+ *      Oferta 100% - Lead 80%
+ * LK Podpisany kontrakt - 90%
+ * LK Zaliczka wpłtynęła - 100%
+ */
+```
+
 ### account\_id \| varchar \(36\) 
+
+{% hint style="warning" %}
+Klucz obcy tabeli accounts
+
+**UWAGA!** Pole dodane zewnętrznie do tabeli opportunities, aby zoptymalizować raportowanie i wiązanie z tabelą. Natywnie w SuiteCRM tabele opportunities oraz accounts są powiazane relacją wiele-do-wielu zapośrednioczoną przez tabelę accounts\_opportunities. 
+
+_Aktualizacja tego pola dokonuje się za pośrednictwem aplikacji CoreA_
+{% endhint %}
 
 ### quote\_id \| varchar \(36\) 
 
-### contract\_id \| varchar \(36\) 
+{% hint style="warning" %}
+Klucz obcy tabeli łączący z jedną ofertą \(Ofertą Estymowaną\).
+
+**UWAGA!** Pole dodane zewnętrznie do tabeli opportunities, aby zoptymalizować raportowanie i wiązanie z tabelą quotes. Natywnie w SuiteCRM tabele opportunities oraz quotes są powiazane relacją jeden-do-wielu \(jeden lead ma wiele ofert\). 
+
+_Aktualizacja tego pola dokonuje się za pośrednictwem aplikacji CoreA_
+{% endhint %}
+
+### contract\_id \| varchar \(36\)
+
+###  
 
 ### tax \| float \(NULL\) 
 
