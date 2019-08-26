@@ -15,6 +15,7 @@ description: 'tabela: opportunities'
 * description \| nvarchar \(-1\) 
 * deleted \| bit \(NULL\) 
 * assigned\_user\_id \| varchar \(36\) 
+* currency\_id \| varchar \(36\) 
 
 ### opportunity\_type \| nvarchar \(255\) 
 
@@ -61,9 +62,22 @@ Lista rozwijalna.
 
 ### amount \| float \(NULL\) 
 
+Pole określające wartość Leada netto.
+
+{% hint style="success" %}
+Na późniejszych etapach procesu sprzedaży wartość ta jest aktualizowana za pomocą 
+
+1. Workflows w SuiteCRm
+2. Cleanerów uruchamianych cyklicznie w aplikacji CoreA.
+{% endhint %}
+
 ### amount\_usdollar \| float \(NULL\) 
 
+> Pole nieużywane
+
 ### currency\_id \| varchar \(36\) 
+
+
 
 ### date\_closed \| datetime \(NULL\) 
 

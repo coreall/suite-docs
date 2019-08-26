@@ -6,10 +6,6 @@ Unikalny identyfikator rekordu
 
 ### name \| nvarchar \(50\) 
 
-{% hint style="info" %}
-Nazwa rekordu
-{% endhint %}
-
 Nazwa rekordu
 
 ### date\_entered \| datetime 
@@ -29,7 +25,7 @@ Klucz obcy łączący z tabelą users
 ### created\_by \| varchar \(36\) 
 
 {% hint style="warning" %}
-Klucz łączący z tabelą users
+Klucz obcy łączący z tabelą users
 {% endhint %}
 
 ### description \| nvarchar \(-1\) 
@@ -40,7 +36,7 @@ Pole przechowujące opis rekordu. Długi tekst
 
 Pole przechowujące informację o tym czy dany rekord został oznaczony jako usunięty. 
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Aplikacje CoreA oraz SuiteCRM pokazuję jedynie rekordy gdzie **deleted  = 0**.
 {% endhint %}
 
@@ -48,6 +44,20 @@ Aplikacje CoreA oraz SuiteCRM pokazuję jedynie rekordy gdzie **deleted  = 0**.
 
 {% hint style="warning" %}
 Klucz obcy łączący z tabelą users.
+{% endhint %}
+
+### currency\_id \| varchar \(36\) 
+
+{% hint style="info" %}
+Lista rozwijalna generowana na postawie currency\_id
+
+* EUR
+* PLN
+* USD
+{% endhint %}
+
+{% hint style="warning" %}
+Jest to zarówno klucz obcy tabeli currencies
 {% endhint %}
 
 
