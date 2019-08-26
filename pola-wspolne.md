@@ -60,5 +60,5 @@ Lista rozwijalna generowana na postawie currency\_id
 Jest to zarówno klucz obcy tabeli currencies
 {% endhint %}
 
-
+### id\_c \| varchar \(36\) 
 

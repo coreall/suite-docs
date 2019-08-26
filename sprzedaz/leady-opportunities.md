@@ -16,6 +16,7 @@ description: 'tabela: opportunities'
 * deleted \| bit \(NULL\) 
 * assigned\_user\_id \| varchar \(36\) 
 * currency\_id \| varchar \(36\) 
+* id\_c \| varchar \(36\) 
 
 ### opportunity\_type \| nvarchar \(255\) 
 
@@ -141,25 +142,57 @@ Klucz obcy tabeli łączący z jedną ofertą \(Ofertą Estymowaną\).
 _Aktualizacja tego pola dokonuje się za pośrednictwem aplikacji CoreA_
 {% endhint %}
 
-### contract\_id \| varchar \(36\)
+### contract\_id \| varchar \(36\) 
 
-###  
+{% hint style="warning" %}
+Klucz obcy tabeli łączący z tabelą contracts
+
+**UWAGA!** Pole dodane zewnętrznie do tabeli opportunities, aby zoptymalizować raportowanie i wiązanie z tabelą contracts. Natywnie w SuiteCRM tabele opportunities oraz quotes są powiazane relacją jeden-do-wielu \(jeden lead ma wiele ofert\). Dzięki temu uzupełnieniu symulujemy relację jeden-do-jednego.
+
+_Aktualizacja tego pola dokonuje się za pośrednictwem aplikacji CoreA._
+{% endhint %}
 
 ### tax \| float \(NULL\) 
 
-### id\_c \| varchar \(36\) 
+> Podatek VAT \(w procentach\).
+
+{% hint style="warning" %}
+Pole nie znajduje się natywnie w SuiteCRM. Aktualiazacja tego pola dokonuje się na podstawie wartości zapisanej w ofercie estymowanej.
+{% endhint %}
 
 ### jjwg\_maps\_lng\_c \| real \(NULL\) 
 
+> Pole nieużywane. Dedykowane do zapisywania współrzędnych geograficznych. W przypadku podania adresu \[jjwg\_maps\_address\_c\] pole może zostać zmapowane za pomocą Google API
+
 ### jjwg\_maps\_lat\_c \| real \(NULL\) 
+
+> Pole nieużywane. Dedykowane do zapisywania współrzędnych geograficznych. W przypadku podania adresu \[jjwg\_maps\_address\_c\] pole może zostać zmapowane za pomocą Google API
 
 ### jjwg\_maps\_geocode\_status\_c \| nvarchar \(255\) 
 
+> Pole nieużywane.Dedykowane dla zapisywania informacji czy powiodło się geotaggowanie
+
 ### jjwg\_maps\_address\_c \| nvarchar \(255\) 
+
+> Pole nieużywane
 
 ### data\_zamkniecia\_c \| datetime \(NULL\) 
 
-### wymagania\_konwersja\_c \| nvarchar \(-1\) 
+> Pole zawierające informację odnośnie planowanej daty zamknięcia Leada. Aktualizowane na podstawie Daty zamknięcia w Ofercie oraz daty podpisania w Zamówienie.
+
+### wymagania\_konwersja\_c \| nvarchar \(-1\)
+
+> ABY PRZEJŚĆ do następnego etapu: - uzupełnij matrycę potrzeb i jeżeli to konieczne matrycę obiekcji - dodaj ofertę pod lead-em na etapie wstępnej wyceny, dodając wstępną datę zamknięcia.
+
+> ABY PRZEJŚĆ do następnego etapu: - wśród osób kontaktowych przypisanych do kontrahenta oznacz DECYDENTA - skoryguj ofertę na gotową, dodaj pod ofertę osobę kontaktową \(decydent\)oraz zmień etap oferty na oferta wysłana jeżeli będzie konieczne, zaktualizuj szacowaną datę zamknięcia.
+
+> Kontynuuj pracę z obiekcjami oraz potrzebami lead-u. - wśród kontaktów lead-u postaraj się znaleźć DECYDENTA - wszelkie obiekcje lead-u muszą zostać zapisane w matrycy obiekcji - W karcie handlowej musi zostać opisana obecna technologia oraz przebieg produkcji ABY przejść do następnego etapu skoryguj ofertę na gotową oraz zmień etap oferty na oferta wysłana jeżeli będzie konieczne zaktualizuj szacowaną datę zamknięcia.
+
+> Po zamknięciu lead-u jako wygranego back office handlu założy PROJEKT OBSŁUGI SPRZEDAŻY \(po uzyskaniu dostępu, skontroluj poprawność danych\) Wszelkie nowe ustalenia z klientem dodawaj pod projekt. Zielona karta może zostać prowadzona za pomocą zmian w projekcie.
+
+> Po zamknięciu lead-u jako wygranego back office handlu założy PROJEKT OBSŁUGI SPRZEDAŻY \(po uzyskaniu dostępu, skontroluj poprawność danych\) Wszelkie nowe ustalenia z klientem dodawaj pod projekt. Zielona karta może zostać prowadzona za pomocą zmian w projekcie.
+
+> Wszelkie kontakty oraz spotkanie muszą zostać dodane do systemu Jeżeli uda się podpisać kontrakt oznacz ofertę na wygraną. - wszystkie oficjalne dokumenty muszą zostać dodane pod kontrahenta - dodaj do sytemu informację o rodzaju gwarancji Jeżeli przegramy ofertę oznaczymy ją jako zamknięta przegrana i w opisie leda-a dodajemy dokładny opis przyczyny przegranej. Jeżeli lead zostanie unieważniony \(kontrahent odstępuje od zakupu ze względu na bliżej nieokreślone przesłanki\) oznacz lead jako zamknięty unieważniony i opisz przyczyny. Pamiętaj że Lead sam wygaśnie po 45 dniach od wysłania oferty.
 
 ### okreslenieleada\_c \| nvarchar \(-1\) 
 
