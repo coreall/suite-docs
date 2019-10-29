@@ -1,26 +1,24 @@
 # Produkty \(aos\_products\)
 
-### id \| varchar\(36\) 
+## Pola wspólne
 
-### name \| nvarchar\(255\) 
-
-### date\_entered \| datetime\(NULL\) 
-
-### date\_modified \| datetime\(NULL\) 
-
-### modified\_user\_id \| varchar\(36\) 
-
-### created\_by \| varchar\(36\) 
-
-### description \| nvarchar\(-1\) 
-
-### deleted \| bit\(NULL\) 
-
-### assigned\_user\_id \| varchar\(36\) 
+* id \| varchar\(36\) 
+* name \| nvarchar\(255\) 
+* date\_entered \| datetime\(NULL\) 
+* date\_modified \| datetime\(NULL\) 
+* modified\_user\_id \| varchar\(36\) 
+* created\_by \| varchar\(36\) 
+* description \| nvarchar\(-1\) 
+* deleted \| bit\(NULL\) 
+* assigned\_user\_id \| varchar\(36\) 
 
 ### maincode \| nvarchar\(100\) 
 
+Kod produktu. W SuiteCRM przyjmuje postać listy rozwijalnej, za pomocą której nie ma sposobu wprowadzić żądane wartości. Raz na 5 minut wartość ta jest porównywana z polem kod\_c i w razie, gdy są różne jest nadpisywana wartością z ww pola.
+
 ### part\_number \| nvarchar\(100\) 
+
+
 
 ### category \| nvarchar\(100\) 
 
@@ -48,6 +46,8 @@
 
 ### kod\_c \| nvarchar\(100\) 
 
+Kod produktu. W to pole jest wprowadzana wartość, która później jest przepisywana do pola maincode
+
 ### szerokosc\_c \| nvarchar\(50\) 
 
 ### bussiness\_unit\_c \| nvarchar\(100\) 
@@ -68,11 +68,19 @@
 
 ### purchase\_price\_c \| decimal\(NULL\) 
 
+Pole dodane na prośbę Pana Prezesa
+
 ### technical\_production\_cost\_c \| decimal\(NULL\) 
+
+Pole dodane na prośbę Pana Prezesa
 
 ### net\_profit\_c \| decimal\(NULL\) 
 
+Pole dodane na prośbę Pana Prezesa
+
 ### end\_user\_price\_pln\_c \| decimal\(NULL\)
+
+Pole dodane na prośbę Pana Prezesa
 
 ###  additional\_cost\_c \| decimal\(NULL\)
 
