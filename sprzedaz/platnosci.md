@@ -139,5 +139,9 @@ Data \(timestamp\) utworzenia rekordu.
 
 Data \(timestamp\) ostatniej aktualizacji rekordu.
 
+#### checksum\_brutto
+
+Wartość kontrolna dla płatności. Niezależnie od waluty, w której została zapisana płatnosć oraz czy została zapisana pierwotnie jako kwota netto czy brutto, **wartość checksum zawsze jest przeliczana do wartości BRUTTO wyrażonej w walucie EUR.**
+
 
 
