@@ -18,9 +18,7 @@ Data i czas ostatniej modyfikacji rekordu w bazie danych
 
 ### modified\_user\_id \| varchar \(36\) 
 
-{% hint style="warning" %}
-Klucz obcy łączący z tabelą users 
-{% endhint %}
+> Klucz obcy łączący z tabelą users
 
 ### created\_by \| varchar \(36\) 
 
