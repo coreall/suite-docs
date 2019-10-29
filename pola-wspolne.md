@@ -22,9 +22,9 @@ Data i czas ostatniej modyfikacji rekordu w bazie danych
 
 ### created\_by \| varchar \(36\) 
 
-{% hint style="warning" %}
+```text
 Klucz obcy łączący z tabelą users
-{% endhint %}
+```
 
 ### description \| nvarchar \(-1\) 
 
