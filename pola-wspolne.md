@@ -48,16 +48,16 @@ Klucz obcy łączący z tabelą users.
 
 ### currency\_id \| varchar \(36\) 
 
+{% hint style="warning" %}
+Klucz obcy tabeli currencies
+{% endhint %}
+
 {% hint style="info" %}
 Lista rozwijalna generowana na postawie currency\_id
 
 * EUR
 * PLN
 * USD
-{% endhint %}
-
-{% hint style="warning" %}
-Jest to zarówno klucz obcy tabeli currencies
 {% endhint %}
 
 ### id\_c \| varchar \(36\) 

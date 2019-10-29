@@ -15,6 +15,7 @@ description: 'tabela: aos_contracts'
 * description \| nvarchar \(-1\) 
 * deleted \| bit \(NULL\) 
 * assigned\_user\_id \| varchar \(36\) 
+* currency\_id \| varchar \(36\) 
 
 ### reference\_code \| nvarchar \(255\) 
 
@@ -38,42 +39,125 @@ Całkowita wartość kontraktu w dolarach
 
 ### currency\_id \| varchar \(36\) 
 
-Identyfikator płatności
-
 {% hint style="info" %}
 Identyikator -99 odnosi się do waluty domyślnej
 {% endhint %}
 
 ### status \| nvarchar \(100\) 
 
-Lista rozwijalna - przyjmuje jedną z trzech wartości
+Lista rozwijalna - przyjmuje jedną z wartości:
+
+* Closed
+* In Progress
+* Not Started
+* Signed
+
+### customer\_signed\_date \| datetime \(NULL\) 
+
+Data podpisania zamówienia przez klienta
+
+### company\_signed\_date \| datetime \(NULL\) 
+
+Data podpisania zamówienia przez Allcomp
+
+### renewal\_reminder\_date \| datetime \(NULL\) 
+
+Pole nieużywane, ale zawierające wartości typu datetime
+
+### contract\_type \| nvarchar \(100\) 
+
+Lista rozwijalna \(przyjmuje listę rozwijalną\)
+
+* Kontrakt 
+* Zamowienie
+
+### contract\_account\_id \| varchar \(36\) 
+
+{% hint style="warning" %}
+Klucz obcy tabeli accounts
+{% endhint %}
+
+### opportunity\_id \| varchar \(36\) 
+
+{% hint style="warning" %}
+Klucz obcy tabeli opportunities
+{% endhint %}
+
+### contact\_id \| varchar \(36\) 
+
+{% hint style="warning" %}
+Klucz obcy tabeli contacts
+{% endhint %}
+
+### call\_id \| varchar \(36\) 
+
+{% hint style="warning" %}
+Klucz obcy tabeli calls
+{% endhint %}
+
+### total\_amt \| decimal \(NULL\) 
+
+Wartość zamówienia netto \(przed rabatem\)
+
+### total\_amt\_usdollar \| decimal \(NULL\) 
+
+Nieużywane
+
+### subtotal\_amount \| decimal \(NULL\) 
+
+Wartość zamówienia netto po rabacie 
+
+### subtotal\_amount\_usdollar \| decimal \(NULL\) 
+
+Nieużywane
+
+### discount\_amount \| decimal \(NULL\) 
+
+Rabat
+
+### discount\_amount\_usdollar \| decimal \(NULL\) 
+
+Nieużywane
+
+### tax\_amount \| decimal \(NULL\) 
+
+Razem VAT
+
+### tax\_amount\_usdollar \| decimal \(NULL\) 
+
+Nieużywane
+
+### shipping\_amount \| decimal \(NULL\) 
+
+Nieużywane 
+
+### shipping\_amount\_usdollar \| decimal \(NULL\) 
+
+Nieużywane
+
+### shipping\_tax \| nvarchar \(100\) 
+
+Nieużywane
+
+### shipping\_tax\_amt \| decimal \(NULL\) 
+
+Nieużywane
+
+### shipping\_tax\_amt\_usdollar \| decimal \(NULL\) 
+
+Nieużywane
+
+### total\_amount \| decimal \(NULL\) 
+
+Razem brutto
+
+### total\_amount\_usdollar \| decimal \(NULL\) 
+
+Nieużywane
+
+### quote\_id \| varchar \(36\)
+
+Identyfikator oferty estymowanej na leadzie powiązanej z kontraktem
 
 
-
-* customer\_signed\_date \| datetime \(NULL\) 
-* company\_signed\_date \| datetime \(NULL\) 
-* renewal\_reminder\_date \| datetime \(NULL\) 
-* contract\_type \| nvarchar \(100\) 
-* contract\_account\_id \| varchar \(36\) 
-* opportunity\_id \| varchar \(36\) 
-* contact\_id \| varchar \(36\) 
-* call\_id \| varchar \(36\) 
-* total\_amt \| decimal \(NULL\) 
-* total\_amt\_usdollar \| decimal \(NULL\) 
-* subtotal\_amount \| decimal \(NULL\) 
-* subtotal\_amount\_usdollar \| decimal \(NULL\) 
-* discount\_amount \| decimal \(NULL\) 
-* discount\_amount\_usdollar \| decimal \(NULL\) 
-* tax\_amount \| decimal \(NULL\) 
-* tax\_amount\_usdollar \| decimal \(NULL\) 
-* shipping\_amount \| decimal \(NULL\) 
-* shipping\_amount\_usdollar \| decimal \(NULL\) 
-* shipping\_tax \| nvarchar \(100\) 
-* shipping\_tax\_amt \| decimal \(NULL\) 
-* shipping\_tax\_amt\_usdollar \| decimal \(NULL\) 
-* total\_amount \| decimal \(NULL\) 
-* total\_amount\_usdollar \| decimal \(NULL\) 
-* quote\_id \| varchar \(36\)
-
-### 
 
