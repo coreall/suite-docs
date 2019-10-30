@@ -2,6 +2,7 @@
 
 * [Wstęp](README.md)
 * [Pola wspólne](pola-wspolne.md)
+* [Testowa stronka](testowa-stronka.md)
 
 ## Sprzedaż
 
