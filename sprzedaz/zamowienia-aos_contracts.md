@@ -2,7 +2,7 @@
 description: 'tabela: aos_contracts'
 ---
 
-# Zamówienia \(aos\_contracts\)
+# Zamówienia
 
 ## Pola wspólne
 

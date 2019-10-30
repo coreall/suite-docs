@@ -2,7 +2,7 @@
 description: 'tabela: payments'
 ---
 
-# Płatności \(payments\)
+# Płatności
 
 ### Pola wspólne \(link\)
 

@@ -1,4 +1,4 @@
-# Produkty \(aos\_products\)
+# Produkty
 
 ## Pola wspólne
 

@@ -2,7 +2,7 @@
 description: 'tabela: opportunities'
 ---
 
-# Leady \(opportunities\)
+# Leady
 
 ### Pola wspólne \([link](https://app.gitbook.com/@pio-skro/s/dokumentacja-crm/~/drafts/-Lmo1Xvz8Q5J3wfhFDSw/primary/pola-wspolne)\)
 
