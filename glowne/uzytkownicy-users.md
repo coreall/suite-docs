@@ -1,6 +1,2 @@
----
-description: 'tabela: users'
----
-
 # Użytkownicy
 

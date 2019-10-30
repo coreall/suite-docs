@@ -1,7 +1,3 @@
----
-description: 'tabela: aos_contracts'
----
-
 # Zamówienia
 
 ## Pola wspólne
