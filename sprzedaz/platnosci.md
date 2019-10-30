@@ -1,12 +1,10 @@
 # Płatności
 
-### Pola wspólne \(link\)
-
-#### id \(UUID\)
+### id \(UUID\)
 
 Niepowtarzalny identyfikator dla każdej płatności.
 
-#### opportunity\_id \(UUID\)
+### opportunity\_id \(UUID\)
 
 {% hint style="warning" %}
 Klucz obcy łączący z tabelą opportunities.
@@ -14,18 +12,18 @@ Klucz obcy łączący z tabelą opportunities.
 
 identyfikator Leada, z którym jest połączona dana płatność. Również w formacie UUID
 
-#### contract\_id \(UUID\)
+### contract\_id \(UUID\)
 
 Identyfikator Zamówienia, z którym jest powiązana dana płatność. W formacie UUID.
 
-#### type 
+### type 
 
 Lista wybieralna z rodzajami płatności 
 
 * Spodziewana \[expected\]
 * Dokonana \[actual\]
 
-#### name 
+### name 
 
 Lista wybieralna z nazwą płatności. Przyjmuje jedną z trzech wartości.
 
@@ -33,7 +31,7 @@ Lista wybieralna z nazwą płatności. Przyjmuje jedną z trzech wartości.
 * Zaliczka PRZED DOSTAWĄ
 * Inna wpłata
 
-#### payment\_date 
+### payment\_date 
 
 Data płatności. Wartość w tym polu jest zależna od wartości wpisanej w pole _date\_calculation\_method._ Jeżeli _date\_calculation\_method_ jest równe:
 
@@ -42,34 +40,34 @@ Data płatności. Wartość w tym polu jest zależna od wartości wpisanej w pol
 * **before\_installation** - wartość payment\_date jest obliczana w stosunku do daty\_instalacji. Jeżeli nie mamy podanej daty instalacji nie można wprowadzić tej wartości.
 * **after\_installation** - wartość payment\_date jest obliczana w stosunku do daty\_instalacji. Jeżeli nie mamy podanej daty instalacji nie można wprowadzić tej wartości.
 
-#### payment\_amount\_netto 
+### payment\_amount\_netto 
 
 Kwota płatności netto, Wartość w tym polu jest zależna od wartości zapisanej w polu _amount\_calculation\_method_. Jeżeli amount\_calculation\_method jest równe:
 
 * strict - wartość jest wpisywana z ręki i nie jest modyfikowana żadnymi obliczeniami
 * percent - wartość przeliczana jako procent wartości całego Leada.
 
-#### payment\_amount\_brutto 
+### payment\_amount\_brutto 
 
 Kwota płatności netto powiększona o % podatku wskazany na poziomie Zamówienia, Oferty, czy Leada. Uwaga: Dla Leadów zagranicznych oraz Leadów Niekwalifikowanych wartość ta może wynosić 0%.
 
-#### checksum 
+### checksum 
 
 Wartość kontrolna dla płatności. Niezależnie od waluty, w której została zapisana płatnosć oraz czy została zapisana pierwotnie jako kwota netto czy brutto, **wartość checksum zawsze jest przeliczana do wartości netto wyrażonej w walucie EUR.**
 
-#### is\_advance 
+### is\_advance 
 
 Wartość logiczna \(prawda / fałsz\) określająca czy dana płatność powinna być traktowana jako zaliczka. Na poziomie interfejsu użytkownika jest założony skrypt, który sprawia, że już na etapie wprowadzania danych wartość is\_advance jest określona jako true dla płatności, gdzie name równa się "Zaliczka START" lub "Zaliczka PRZED DOSTAWĄ" oraz jest określana jako false dla płatności gdzie name = "Inna wpłata".
 
-#### invoice 
+### invoice 
 
 Numer faktury w systemie Optima.
 
-#### deleted 
+### deleted 
 
 Pole ukryte. Określa czy dana płatność nie została usunięta.
 
-#### currency\_id 
+### currency\_id 
 
 Identyfikator waluty danej płatności. 
 
@@ -81,13 +79,13 @@ Identyfikator waluty danej płatności.
 
 Przelicznik w stosunku do EURO dla danej waluty. Dla płatności jest pobierana z banku NBP z dnia poprzedającego dzień wpłaty.
 
-#### conversion\_date 
+### conversion\_date 
 
 Data przewalutowania. Zasadniczo jest to dzień poprzedzajacy dzień wpłaty, a w przypadku, gdy w danym dniu NBP nie publikowało kursów walut, będzie to data poprzedzająca dany dzień.
 
-#### date\_calculation\_value 
+### date\_calculation\_value 
 
-#### date\_calculation\_method 
+### date\_calculation\_method 
 
 Sposób obliczania daty płatności. Może przyjąć następujące wartości.
 
@@ -96,46 +94,46 @@ Sposób obliczania daty płatności. Może przyjąć następujące wartości.
 * before\_installation
 * after\_installation
 
-#### amount\_calculation\_method 
+### amount\_calculation\_method 
 
 Sposob naliczania kwoty płatności. Może przyjąć następujące wartości
 
 * strict
 * percent
 
-#### percent 
+### percent 
 
 Procent kwoty oznaczonej jako kwota kontraktu.
 
-#### note 
+### note 
 
 Miejsce na notatkę dotyczącą płatności. Max 255 znaków.
 
-#### created\_by \(UUID\)
+### created\_by \(UUID\)
 
 Identyfikator użytkownika, który utworzył rekord
 
-#### modified\_by \(UUID\)
+### modified\_by \(UUID\)
 
 Identyfikator użytkownika, który dokonał ostatniej aktualizacji na danym rekordzie.
 
-#### frozen\_by 
+### frozen\_by 
 
 Identyfikator użytkownika, który zablokował rekord do dalszej edycji.
 
-#### frozen\_at 
+### frozen\_at 
 
 Data \(timestamp\) zablokowania rekordu do dalszej edycji.
 
-#### created\_at 
+### created\_at 
 
 Data \(timestamp\) utworzenia rekordu.
 
-#### updated\_at
+### updated\_at
 
 Data \(timestamp\) ostatniej aktualizacji rekordu.
 
-#### checksum\_brutto
+### checksum\_brutto
 
 Wartość kontrolna dla płatności. Niezależnie od waluty, w której została zapisana płatnosć oraz czy została zapisana pierwotnie jako kwota netto czy brutto, **wartość checksum zawsze jest przeliczana do wartości BRUTTO wyrażonej w walucie EUR.**
 
