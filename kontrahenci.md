@@ -16,7 +16,7 @@
 
 Typ kontrahenta
 
-{% hint style="danger" %}
+{% hint style="info" %}
 Lista rozwijalna. Przyjmuje jedną z wartości:
 
 * Dealer 
@@ -30,33 +30,78 @@ Lista rozwijalna. Przyjmuje jedną z wartości:
 * Other
 {% endhint %}
 
-industry \| nvarchar \(100\)
+### industry \| nvarchar \(100\)
 
-annual\_revenue \| nvarchar \(100\)
+Branża przedsiębiorcy 
 
-phone\_fax \| nvarchar \(100\)
+{% hint style="info" %}
+Lista rozwijalna przyjmuje wartości:
 
-billing\_address\_street \| nvarchar \(150\)
+* ^Automotive^
+* ^Automotive^,^Meblarska^
+* ^Biuro\_konstrukcyjne^
+* ^Government^
+* ^Homedecor^
+* ^Homedecor^,^Obuwie^
+* ^Kompozyty^
+* ^Machinery^
+* ^Meblarska^
+* ^Meblarska^,^Obuwie^
+* ^Not For Profit^
+* ^Odziez^
+* ^Pozostali^
+* ^Technologies^
+* ^Utilities^
+* ^Zabawki^
+{% endhint %}
 
-billing\_address\_city \| nvarchar \(100\)
+### phone\_fax \| nvarchar \(100\)
 
-billing\_address\_state \| nvarchar \(100\)
+Numer fax
 
-billing\_address\_postalcode \| nvarchar \(20\)
+### billing\_address\_street \| nvarchar \(150\)
 
-billing\_address\_country \| nvarchar \(255\)
+Adres kontrahenta - ulica
 
-rating \| nvarchar \(100\)
+### billing\_address\_city \| nvarchar \(100\)
 
-phone\_office \| nvarchar \(100\)
+Adres kontrahenta - miasto
 
-phone\_alternate \| nvarchar \(100\)
+### billing\_address\_state \| nvarchar \(100\)
 
-website \| nvarchar \(255\)
+Adres kontrahenta - województwo
 
-ownership \| nvarchar \(100\)
+### billing\_address\_postalcode \| nvarchar \(20\)
 
-employees \| nvarchar \(10\)
+Adres kontrahenta - kod pocztowy
+
+### billing\_address\_country \| nvarchar \(255\)
+
+Adres kontrahenta - państwo
+
+### rating \| nvarchar \(100\)
+
+W tym polu jest zapisywany numer NIP
+
+### phone\_office \| nvarchar \(100\)
+
+Telefon do biura
+
+### phone\_alternate \| nvarchar \(100\)
+
+Dodatkowy numer telefonu
+
+### website \| nvarchar \(255\)
+
+Strona internetowa
+
+### ownership \| nvarchar \(100\)
+
+Pole nieużywane
+
+### employees \| nvarchar \(10\)
+
+Pole nieużywane
 
 ticker\_symbol \| nvarchar \(10\)
 
