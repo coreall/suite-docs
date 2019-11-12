@@ -70,7 +70,7 @@ Na późniejszych etapach procesu sprzedaży wartość ta jest aktualizowana za 
 
 ### amount\_usdollar \| float \(NULL\) 
 
-> Pole nieużywane
+Pole nieużywane 
 
 ### date\_closed \| datetime \(NULL\) 
 
