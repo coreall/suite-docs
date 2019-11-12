@@ -13,5 +13,5 @@
 
 ## Główne
 
-* [Użytkownicy](glowne/uzytkownicy-users.md)
+* [Kontrahenci](glowne/uzytkownicy-users.md)
 
