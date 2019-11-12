@@ -124,9 +124,15 @@ Koszt dostawy
 
 ### shipping\_amount\_usdollar \| decimal \(NULL\)
 
-shipping\_tax \| nvarchar \(100\)
+Pole nieużywane
 
-shipping\_tax\_amt \| decimal \(NULL\)
+### shipping\_tax \| nvarchar \(100\)
+
+Pole nieużywane.
+
+### shipping\_tax\_amt \| decimal \(NULL\)
+
+Pole nieużywane.
 
 ### shipping\_tax\_amt\_usdollar \| decimal \(NULL\)
 
@@ -185,7 +191,7 @@ Pole nieużywane
 
 Numer oferty
 
-id\_c \| varchar \(36\)
+### id\_c \| varchar \(36\)
 
 ```text
 Identyfikator tabeli aos_quotes_cstm
