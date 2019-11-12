@@ -50,8 +50,6 @@ Klucz obcy łączący z tabelą users.
 Klucz obcy tabeli currencies
 ```
 
-![](.gitbook/assets/thumb-1920-486292.jpg)
-
 Lista rozwijalna generowana na postawie currency\_id
 
 * EUR
