@@ -16,7 +16,7 @@
 
 ### opportunity\_type \| nvarchar \(255\) 
 
-> Pole niewidoczne w SuiteCRM
+Pole niewidoczne w SuiteCRM
 
 {% hint style="info" %}
 Lista rozwijalna. Może przyjąć wartości _\[Wartość zapisywana w DB\]_
