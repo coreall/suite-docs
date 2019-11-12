@@ -30,23 +30,43 @@ Klucz obcy tabeli contacts
 
 ### billing\_address\_street \| nvarchar \(150\)
 
-billing\_address\_city \| nvarchar \(100\)
+Adres kontrahenta - ulica
 
-billing\_address\_state \| nvarchar \(100\)
+### billing\_address\_city \| nvarchar \(100\)
 
-billing\_address\_postalcode \| nvarchar \(20\)
+Adres kontrahenta - miasto
 
-billing\_address\_country \| nvarchar \(255\)
+### billing\_address\_state \| nvarchar \(100\)
 
-shipping\_address\_street \| nvarchar \(150\)
+Adres kontrahenta - województwo
 
-shipping\_address\_city \| nvarchar \(100\)
+### billing\_address\_postalcode \| nvarchar \(20\)
 
-shipping\_address\_state \| nvarchar \(100\)
+Adres kontrahenta - kod pocztowy
 
-shipping\_address\_postalcode \| nvarchar \(20\)
+### billing\_address\_country \| nvarchar \(255\)
 
-shipping\_address\_country \| nvarchar \(255\)
+Adres kontrahenta - państwo
+
+### shipping\_address\_street \| nvarchar \(150\)
+
+Adres dostawy - ulica
+
+### shipping\_address\_city \| nvarchar \(100\)
+
+Adres dostawy - miasto
+
+### shipping\_address\_state \| nvarchar \(100\)
+
+Adres dostawy - województwo
+
+### shipping\_address\_postalcode \| nvarchar \(20\)
+
+Adres dostawy - kod pocztowy
+
+### shipping\_address\_country \| nvarchar \(255\)
+
+Adres dostawy - państwo
 
 expiration \| datetime \(NULL\)
 
@@ -120,33 +140,53 @@ przyczyna\_porazki\_c \| nvarchar \(255\)
 
 przyczyna\_wygranej\_c \| nvarchar \(-1\)
 
-account\_id\_c \| varchar \(36\)
+### account\_id\_c \| varchar \(36\)
+
+Połączony kontrahent
+
+```text
+Klucz obcy tabeli account
+```
 
 typ\_maszyny\_c \| nvarchar \(255\)
 
 typ\_oferty\_c \| nvarchar \(100\)
 
-akceptacja\_dyrekcja\_c \| bit \(NULL\)
+### akceptacja\_dyrekcja\_c \| bit \(NULL\)
 
-akceptacja\_handlowiec\_c \| bit \(NULL\)
+Pole oznaczane przez dyrekcję
 
-akceptacja\_finansowa\_c \| bit \(NULL\)
+### akceptacja\_handlowiec\_c \| bit \(NULL\)
+
+Pole oznaczane przez handlowca 
+
+### akceptacja\_finansowa\_c \| bit \(NULL\)
 
 akceptacja\_inz\_prod\_c \| bit \(NULL\)
 
-weryfikacja\_finansowa\_c \| nvarchar \(100\)
+### weryfikacja\_finansowa\_c \| nvarchar \(100\)
 
-weryfikacja\_inz\_c \| nvarchar \(100\)
+Pole nieużywane.
 
-typ\_produktu\_c \| nvarchar \(100\)
+### weryfikacja\_inz\_c \| nvarchar \(100\)
 
-akceptacja\_techniczna\_c \| bit \(NULL\)
+Pole nieużywane.
 
-powiadom\_dyrekcje\_c \| nvarchar \(1\)
+### typ\_produktu\_c \| nvarchar \(100\)
 
-date\_sent\_quote\_c \| datetime \(NULL\)
+### akceptacja\_techniczna\_c \| bit \(NULL\)
 
-installation\_date\_c \| datetime \(NULL\)
+### powiadom\_dyrekcje\_c \| nvarchar \(1\)
 
-closed\_won\_probability\_c \| nvarchar \(100\)
+### date\_sent\_quote\_c \| datetime \(NULL\)
+
+Data wysłania oferty - aktualizowane przez proces
+
+### installation\_date\_c \| datetime \(NULL\)
+
+Data instalacji - aktualizowana na podstawie kontraktu
+
+### closed\_won\_probability\_c \| nvarchar \(100\)
+
+Prawdopodobieństwo wygranej
 
