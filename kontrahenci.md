@@ -103,49 +103,99 @@ Pole nieużywane
 
 Pole nieużywane
 
-ticker\_symbol \| nvarchar \(10\)
+### ticker\_symbol \| nvarchar \(10\)
 
-shipping\_address\_street \| nvarchar \(150\)
+Pole nieużywane
 
-shipping\_address\_city \| nvarchar \(100\)
+### shipping\_address\_street \| nvarchar \(150\)
 
-shipping\_address\_state \| nvarchar \(100\)
+Adres dostawy - ulica
 
-shipping\_address\_postalcode \| nvarchar \(20\)
+### shipping\_address\_city \| nvarchar \(100\)
 
-shipping\_address\_country \| nvarchar \(255\)
+Adres dostawy - miasto
 
-parent\_id \| varchar \(36\)
+### shipping\_address\_state \| nvarchar \(100\)
 
-sic\_code \| nvarchar \(10\)
+Adres dostawy - województwo
 
-campaign\_id \| varchar \(36\)
+### shipping\_address\_postalcode \| nvarchar \(20\)
 
-billing\_address\_region \| nvarchar \(255\)
+Adres dostawy - kod pocztowy
 
-shipping\_address\_region \| nvarchar \(255\)
+### shipping\_address\_country \| nvarchar \(255\)
 
-id\_c \| varchar \(36\)
+Adres dostawy - państwo
 
-jjwg\_maps\_lng\_c \| real \(NULL\)
+### parent\_id \| varchar \(36\)
 
-jjwg\_maps\_lat\_c \| real \(NULL\)
+{% hint style="info" %}
+Klucz obcy tabeli accounts
+{% endhint %}
 
-jjwg\_maps\_geocode\_status\_c \| nvarchar \(255\)
+### sic\_code \| nvarchar \(10\)
 
-jjwg\_maps\_address\_c \| nvarchar \(255\)
+Pole nieużywane.
 
-forma\_po\_fin\_c \| nvarchar \(255\)
+### campaign\_id \| varchar \(36\)
 
-skala\_dzialani\_c \| nvarchar \(255\)
+{% hint style="info" %}
+Identyfikator powiązanej kampanii
+{% endhint %}
 
-inf\_nat\_zatru\_c \| nvarchar \(255\)
+### billing\_address\_region \| nvarchar \(255\)
 
-rekrutacje\_c \| nvarchar \(255\)
+Pole nieużywane
 
-aktualna\_sytuacja\_c \| nvarchar \(255\)
+### shipping\_address\_region \| nvarchar \(255\)
+
+Pole nieużywane
+
+### id\_c \| varchar \(36\)
+
+{% hint style="info" %}
+
+{% endhint %}
+
+### jjwg\_maps\_lng\_c \| real \(NULL\)
+
+Pole nieużywane
+
+### jjwg\_maps\_lat\_c \| real \(NULL\)
+
+Pole nieużywane
+
+### jjwg\_maps\_geocode\_status\_c \| nvarchar \(255\)
+
+Pole nieużywane
+
+### jjwg\_maps\_address\_c \| nvarchar \(255\)
+
+Pole nieużywane.
+
+### forma\_po\_fin\_c \| nvarchar \(255\)
+
+Pole nieużywane
+
+### skala\_dzialani\_c \| nvarchar \(255\)
+
+Pole nieużywane
+
+### inf\_nat\_zatru\_c \| nvarchar \(255\)
+
+Pole nieużywane
+
+### rekrutacje\_c \| nvarchar \(255\)
+
+Pole nieużywane
+
+### aktualna\_sytuacja\_c \| nvarchar \(255\)
+
+Pole nieużywane
 
 obecna\_technologia\_c \| nvarchar \(255\)
+
+
 
 przebieg\_produkcji\_c \| nvarchar \(-1\)
 
@@ -203,17 +253,35 @@ ownership\_form\_list\_c \| nvarchar \(100\)
 
 gain\_c \| decimal \(NULL\)
 
-cutting\_room\_c \| nvarchar \(100\)
+### cutting\_room\_c \| nvarchar \(100\)
 
-notes\_itcube\_c \| nvarchar \(-1\)
+Informacja czy kontrahent posiada krojownię.
 
-reccomendation\_c \| nvarchar \(100\)
+### notes\_itcube\_c \| nvarchar \(-1\)
 
-reference\_visit\_c \| nvarchar \(100\)
+Stare notatki z ITCUBE
 
-reference\_c \| nvarchar \(100\)
+### reccomendation\_c \| nvarchar \(100\)
 
-earlier\_assigned\_to\_c \| nvarchar \(255\)
+Rekomendacja
 
-internal\_path\_c \| nvarchar \(255\)
+### reference\_visit\_c \| nvarchar \(100\)
+
+Wizyta referencyjna
+
+### reference\_c \| nvarchar \(100\)
+
+Referencje 
+
+### earlier\_assigned\_to\_c \| nvarchar \(255\)
+
+Wcześniej przypisane do
+
+{% hint style="warning" %}
+Pole aktualizowane na nakładką JS
+{% endhint %}
+
+### internal\_path\_c \| nvarchar \(255\)
+
+Ścieżka do katalogu w domenie
 
