@@ -155,5 +155,11 @@ Nieużywane
 
 Identyfikator oferty estymowanej na leadzie powiązanej z kontraktem
 
+{% hint style="warning" %}
+Klucz obcy tabeli aos\_quotes
+{% endhint %}
+
+
+
 
 

@@ -101,10 +101,9 @@ Lista rozwijalna
 
 ### probability \| float \(NULL\) 
 
-Prawdopodobieństwo. Za wyjątkiem gdy etap Leada jest równy LN prawdopodobieńtwo jest aktualizowane przez aplikację CoreA raz dziennie na podstawie zależności. 
+Prawdopodobieństwo. Za wyjątkiem gdy etap Leada jest równy LN prawdopodobieńtwo jest aktualizowane przez aplikację CoreA raz dziennie na podstawie zależności. /\*
 
 ```text
-/*
  * LN - 2%
  * LK Wycena - 10%
  * LK Oferta wysłana
