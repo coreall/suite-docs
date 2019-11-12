@@ -14,13 +14,19 @@
 
 ### approval\_issue \| nvarchar \(-1\)
 
+Informacja do akceptacji
+
 ### billing\_account\_id \| varchar \(36\)
 
+```text
 Klucz obcy tabeli accounts
+```
 
 ### billing\_contact\_id \| varchar \(36\)
 
-
+```text
+Klucz obcy tabeli contacts
+```
 
 ### billing\_address\_street \| nvarchar \(150\)
 
