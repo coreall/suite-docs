@@ -161,25 +161,47 @@ Przyjmuje wartości
 * Wymaga Akceptacji
 * Nie wymaga 
 
-invoice\_status \| nvarchar \(100\)
+### invoice\_status \| nvarchar \(100\)
 
-subtotal\_tax\_amount \| decimal \(NULL\)
+Pole nieużywane
 
-subtotal\_tax\_amount\_usdollar \| decimal \(NULL\)
+### subtotal\_tax\_amount \| decimal \(NULL\)
 
-billing\_address\_region \| nvarchar \(255\)
+Pole nieużywane
 
-shipping\_address\_region \| nvarchar \(255\)
+### subtotal\_tax\_amount\_usdollar \| decimal \(NULL\)
 
-nr\_oferty \| nvarchar \(255\)
+Pole nieużywane
+
+### billing\_address\_region \| nvarchar \(255\)
+
+Pole nieużywane
+
+### shipping\_address\_region \| nvarchar \(255\)
+
+Pole nieużywane
+
+### nr\_oferty \| nvarchar \(255\)
+
+Numer oferty
 
 id\_c \| varchar \(36\)
 
-werfyfikacja\_techniczna\_c \| nvarchar \(100\)
+```text
+Identyfikator tabeli aos_quotes_cstm
+```
 
-warunki\_c \| nvarchar \(-1\)
+### werfyfikacja\_techniczna\_c \| nvarchar \(100\)
 
-warunkig\_c \| nvarchar \(-1\)
+Pole nieużywane
+
+### warunki\_c \| nvarchar \(-1\)
+
+Pole nieużywane
+
+### warunkig\_c \| nvarchar \(-1\)
+
+Pole nieużywane
 
 ### przyczyna\_porazki\_c \| nvarchar \(255\)
 
