@@ -68,53 +68,98 @@ Adres dostawy - kod pocztowy
 
 Adres dostawy - państwo
 
-expiration \| datetime \(NULL\)
+### expiration \| datetime \(NULL\)
 
-number \| int \(NULL\)
+Data ważności oferty
 
-opportunity\_id \| varchar \(36\)
+### number \| int \(NULL\)
 
-template\_ddown\_c \| nvarchar \(-1\)
+Numer oferty
 
-total\_amt \| decimal \(NULL\)
+### opportunity\_id \| varchar \(36\)
 
-total\_amt\_usdollar \| decimal \(NULL\)
+```text
+Klucz obcy tabeli opportunities
+```
 
-subtotal\_amount \| decimal \(NULL\)
+### template\_ddown\_c \| nvarchar \(-1\)
 
-subtotal\_amount\_usdollar \| decimal \(NULL\)
+Pole nieuzżwane
 
-discount\_amount \| decimal \(NULL\)
+### total\_amt \| decimal \(NULL\)
 
-discount\_amount\_usdollar \| decimal \(NULL\)
+Kwota \[Razem netto\]
 
-tax\_amount \| decimal \(NULL\)
+### total\_amt\_usdollar \| decimal \(NULL\)
 
-tax\_amount\_usdollar \| decimal \(NULL\)
+Pole nieużywane
 
-shipping\_amount \| decimal \(NULL\)
+### subtotal\_amount \| decimal \(NULL\)
 
-shipping\_amount\_usdollar \| decimal \(NULL\)
+Kwota \[Razem netto po rabacie\]
+
+### subtotal\_amount\_usdollar \| decimal \(NULL\)
+
+Pole nieużywane
+
+### discount\_amount \| decimal \(NULL\)
+
+Wartość zniżki
+
+### discount\_amount\_usdollar \| decimal \(NULL\)
+
+Pole nieużywane
+
+### tax\_amount \| decimal \(NULL\)
+
+Wartość podatku
+
+### tax\_amount\_usdollar \| decimal \(NULL\)
+
+Pole nieżywane
+
+### shipping\_amount \| decimal \(NULL\)
+
+Koszt dostawy
+
+### shipping\_amount\_usdollar \| decimal \(NULL\)
 
 shipping\_tax \| nvarchar \(100\)
 
 shipping\_tax\_amt \| decimal \(NULL\)
 
-shipping\_tax\_amt\_usdollar \| decimal \(NULL\)
+### shipping\_tax\_amt\_usdollar \| decimal \(NULL\)
 
 total\_amount \| decimal \(NULL\)
 
-total\_amount\_usdollar \| decimal \(NULL\)
+### total\_amount\_usdollar \| decimal \(NULL\)
 
-currency\_id \| varchar \(36\)
+Pole nieużywane
 
-stage \| nvarchar \(100\)
+### currency\_id \| varchar \(36\)
 
-term \| nvarchar \(100\)
+```text
+Klucz obcy tabel
+```
 
-terms\_c \| nvarchar \(-1\)
+### stage \| nvarchar \(100\)
 
-approval\_status \| nvarchar \(100\)
+Status oferty
+
+### term \| nvarchar \(100\)
+
+Pole nieużywane
+
+### terms\_c \| nvarchar \(-1\)
+
+Pole nieużywane
+
+### approval\_status \| nvarchar \(100\)
+
+Przyjmuje wartości
+
+* Wymaga Akceptacji
+* Nie wymaga 
 
 invoice\_status \| nvarchar \(100\)
 
@@ -136,9 +181,13 @@ warunki\_c \| nvarchar \(-1\)
 
 warunkig\_c \| nvarchar \(-1\)
 
-przyczyna\_porazki\_c \| nvarchar \(255\)
+### przyczyna\_porazki\_c \| nvarchar \(255\)
 
-przyczyna\_wygranej\_c \| nvarchar \(-1\)
+Pole tekstowe do opisania przyczyny wygranej
+
+### przyczyna\_wygranej\_c \| nvarchar \(-1\)
+
+Pole tekstowe do opisania przyczyny wygranej
 
 ### account\_id\_c \| varchar \(36\)
 
@@ -148,9 +197,16 @@ Połączony kontrahent
 Klucz obcy tabeli account
 ```
 
-typ\_maszyny\_c \| nvarchar \(255\)
+### typ\_maszyny\_c \| nvarchar \(255\)
 
-typ\_oferty\_c \| nvarchar \(100\)
+Pole nieużywane
+
+### typ\_oferty\_c \| nvarchar \(100\)
+
+Pole typu dropdown przyjmujące wartości: 
+
+* Estymowana, 
+* Wariant
 
 ### akceptacja\_dyrekcja\_c \| bit \(NULL\)
 
@@ -174,9 +230,15 @@ Pole nieużywane.
 
 ### typ\_produktu\_c \| nvarchar \(100\)
 
+Pole nieużywane.
+
 ### akceptacja\_techniczna\_c \| bit \(NULL\)
 
+Pole nieużywane.
+
 ### powiadom\_dyrekcje\_c \| nvarchar \(1\)
+
+Pole nieużywane.
 
 ### date\_sent\_quote\_c \| datetime \(NULL\)
 
