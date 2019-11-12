@@ -35,10 +35,9 @@ Lista rozwijalna. Przyjmuje jedną z wartości:
 Branża przedsiębiorcy 
 
 {% hint style="info" %}
-Lista rozwijalna przyjmuje wartości:
+Lista wielokrotnego wyboru przyjmuje wartości:
 
 * ^Automotive^
-* ^Automotive^,^Meblarska^
 * ^Biuro\_konstrukcyjne^
 * ^Government^
 * ^Homedecor^
@@ -154,7 +153,7 @@ Pole nieużywane
 ### id\_c \| varchar \(36\)
 
 {% hint style="info" %}
-
+Klucz obcy tabeli accounts\_cstm
 {% endhint %}
 
 ### jjwg\_maps\_lng\_c \| real \(NULL\)
