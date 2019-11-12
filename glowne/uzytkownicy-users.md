@@ -16,7 +16,7 @@
 
 Typ kontrahenta
 
-{% hint style="info" %}
+{% hint style="danger" %}
 Lista rozwijalna. Przyjmuje jedną z wartości:
 
 * Dealer 
