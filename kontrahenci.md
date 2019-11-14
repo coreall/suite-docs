@@ -153,7 +153,7 @@ Pole nieużywane
 ### id\_c \| varchar \(36\)
 
 {% hint style="info" %}
-Klucz obcy tabeli accounts\_cstm
+Klucz obcy tabeli accounts
 {% endhint %}
 
 ### jjwg\_maps\_lng\_c \| real \(NULL\)
