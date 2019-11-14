@@ -280,3 +280,7 @@ Data instalacji - aktualizowana na podstawie kontraktu
 
 Prawdopodobieństwo wygranej
 
+{% hint style="danger" %}
+Pole aktualizowane za pomocą narzędzia do przedłużania ofert
+{% endhint %}
+
