@@ -18,15 +18,15 @@ Informacja do akceptacji
 
 ### billing\_account\_id \| varchar \(36\)
 
-```text
+{% hint style="warning" %}
 Klucz obcy tabeli accounts
-```
+{% endhint %}
 
 ### billing\_contact\_id \| varchar \(36\)
 
-```text
+{% hint style="warning" %}
 Klucz obcy tabeli contacts
-```
+{% endhint %}
 
 ### billing\_address\_street \| nvarchar \(150\)
 
@@ -78,9 +78,9 @@ Numer oferty
 
 ### opportunity\_id \| varchar \(36\)
 
-```text
+{% hint style="info" %}
 Klucz obcy tabeli opportunities
-```
+{% endhint %}
 
 ### template\_ddown\_c \| nvarchar \(-1\)
 
