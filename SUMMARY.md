@@ -14,4 +14,5 @@
 ## Główne
 
 * [Kontrahenci](kontrahenci.md)
+* [Kontakty](kontakty.md)
 
