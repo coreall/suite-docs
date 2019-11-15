@@ -149,7 +149,9 @@ Pole nieużywane
 
 ### account\_id \| varchar \(36\)
 
-
+{% hint style="warning" %}
+Domyślnie w SuiteCRM moduły \[accounts\] oraz \[contacts\] są połączone relacją wiele-do-wielu za pośrednictwem tabeli \[accounts\_contacts\]. Pole account\_id jest nadpisywane osobnym skryptem za pośrednictwem aplikacji CoreA.
+{% endhint %}
 
 ### name \| nvarchar \(201\)
 
@@ -175,7 +177,15 @@ Pole nieużywane
 
 ### rolazakupowa\_c \| nvarchar \(100\)
 
+{% hint style="info" %}
+Lista wybieralna zawierająca jedną z wartości:
 
+* -czysto- \[-czysto-\]
+* Decydent \[Decydent\]
+* Poszkodowany \[Poszkodowany\]
+* Doradca \[Doradca\]
+* Pilot \[Pilot\]
+{% endhint %}
 
 ### obszar\_allcomp\_c \| nvarchar \(100\)
 
