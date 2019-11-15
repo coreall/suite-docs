@@ -192,11 +192,13 @@ Pole nieużywane
 
 Pole nieużywane
 
-obecna\_technologia\_c \| nvarchar \(255\)
+### obecna\_technologia\_c \| nvarchar \(255\)
+
+Pole nieużywane
+
+### przebieg\_produkcji\_c \| nvarchar \(-1\)
 
 
-
-przebieg\_produkcji\_c \| nvarchar \(-1\)
 
 plany\_c \| nvarchar \(-1\)
 
