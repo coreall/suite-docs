@@ -149,31 +149,119 @@ Pole nieużywane
 
 ### account\_id \| varchar \(36\)
 
-name \| nvarchar \(201\)
 
-id\_c \| varchar \(36\)
 
-jjwg\_maps\_lng\_c \| real \(NULL\)
+### name \| nvarchar \(201\)
 
-jjwg\_maps\_lat\_c \| real \(NULL\)
+{% hint style="info" %}
+Pole zawierające 
+{% endhint %}
 
-jjwg\_maps\_geocode\_status\_c \| nvarchar \(255\)
+### jjwg\_maps\_lng\_c \| real \(NULL\)
 
-jjwg\_maps\_address\_c \| nvarchar \(255\)
+Pole nieużywane
 
-rolazakupowa\_c \| nvarchar \(100\)
+### jjwg\_maps\_lat\_c \| real \(NULL\)
 
-obszar\_allcomp\_c \| nvarchar \(100\)
+Pole nieużywane
 
-stanowisko\_c \| nvarchar \(100\)
+### jjwg\_maps\_geocode\_status\_c \| nvarchar \(255\)
 
-plec\_c \| nvarchar \(100\)
+Pole nieużywane
 
-przedzial\_wiekowy\_c \| nvarchar \(100\)
+### jjwg\_maps\_address\_c \| nvarchar \(255\)
 
-facebook\_c \| nvarchar \(255\)
+Pole nieużywane
 
-linkedin\_c \| nvarchar \(255\)
+### rolazakupowa\_c \| nvarchar \(100\)
 
-active\_c \| nvarchar \(100\)
+
+
+### obszar\_allcomp\_c \| nvarchar \(100\)
+
+Pole nieużywane
+
+### stanowisko\_c \| nvarchar \(100\)
+
+{% hint style="info" %}
+Lista wybieralna, która przyjmuje jedną z wartości
+
+* -czysto- \[-czysto-\]
+* Właściciel \[Właściciel\]
+* Współwłaściciel \[Współwłaściciel\]
+* Prezes \[Prezes\]
+* Wiceprezes \[Wiceprezes\]
+* Prezes Zarządu \[Prezes Zarządu\]
+* Wiceprezes Zarządu \[Wiceprezes Zarządu\]
+* Dyrektor zarządu \[Dyrektor zarządu\]
+* Dyrektor generalny \[Dyrektor generalny\]
+* Zastępca dyrektora zarządu \[Zastępca dyrektora zarządu\]
+* Członek zarządu \[Członek zarządu\]
+* Przewodniczący rady nadzorczej \[Przewodniczący rady nadzorczej\]
+* Członek rady nadzorczej \[Członek rady nadzorczej\]
+* Prokurent \[Prokurent\]
+* Sekretarka \[Sekretarka\]
+* Dyrektor zakładu \[Dyrektor zakładu\]
+* Dyrektor\_handlowy \[Dyrektor handlowy\]
+* Dyrektor finansowy \[Dyrektor finansowy\]
+* Dyrektor produkcji \[Dyrektor produkcji\]
+* Dyrektor techniczny \[Dyrektor techniczny\]
+* Dyrektor projektu \[Dyrektor projektu\]
+* Dyrektor ds. organizacyjnych \[Dyrektor ds. organizacyjnych\]
+* Zastępca szefa produkcji \[Zastępca szefa produkcji\]
+* Kierownik krojowni \[Kierownik krojowni\]
+* Kierownik przygotowania produkcji \[Kierownik przygotowania produkcji\]
+* Kierownik biura konstrukcji \[Kierownik biura konstrukcji\]
+* Kierownik wzorcowni \[Kierownik wzorcowni\]
+* Kierownik działu technicznego \[Kierownik działu technicznego\]
+* Kierownik utrzymania ruchu \[Kierownik utrzymania ruchu\]
+* Kierownik tapicerni \[Kierownik tapicerni\]
+* Kierownik szwalni \[Kierownik szwalni\]
+* Kierownik działu technologicznego \[Kierownik działu technologicznego\]
+* Kierownik jakości \[Kierownik jakości\]
+* Kierownik optymalizacji procesów \[Kierownik optymalizacji procesów\]
+* Menager ds. produkcji \[Menager ds. produkcji\]
+* Menager ds. rozwoju \[Menager ds. rozwoju\]
+* Główny mechanik \[Główny mechanik\]
+* Główny technolog \[Główny technolog\]
+* Doradca techniczny \[Doradca techniczny\]
+* Specjalista ds. jakości \[Specjalista ds. jakości\]
+* Specjalista ds. rozwoju \[Specjalista ds. rozwoju\]
+* Specjalista ds. tekstyliów \[Specjalista ds. tekstyliów\]
+* Specjalista ds. Kontroli Danych Produkcyjnych \[Specjalista ds. Kontroli Danych Produkcyjnych\]
+* Specjalista ds. nowych wdrożeń \[Specjalista ds. nowych wdrożeń\]
+* Specjalista ds. szablonów/wykroju \[Specjalista ds. szablonów/wykroju\]
+* Specjalista ds. Utrzymania Ruchu \[Specjalista ds. Utrzymania Ruchu\]
+* Konstruktor \[Konstruktor\]
+* Projektant \[Projektant\]
+* Technik \[Technik\]
+* Tapicer \[Tapicer\]
+* Krojczy \[Krojczy\]
+* Obsługa maszyn \[Obsługa maszyn\]
+* Kierownik zaopatrzenia \[Kierownik zaopatrzenia\]
+* Specjalista ds. logistyki \[Specjalista ds. logistyki\]
+* Główna księgowa \[Główna księgowa\]
+* Inne \[Inne\]
+* Production\_manager \[Kierownik produkcji\]
+{% endhint %}
+
+### plec\_c \| nvarchar \(100\)
+
+Pole nieużywane
+
+### przedzial\_wiekowy\_c \| nvarchar \(100\)
+
+Pole nieużywane
+
+### facebook\_c \| nvarchar \(255\)
+
+Pole nieużywane
+
+### linkedin\_c \| nvarchar \(255\)
+
+Pole nieużywane
+
+### active\_c \| nvarchar \(100\)
+
+Informacja czy dany kontakt jest aktywny
 
